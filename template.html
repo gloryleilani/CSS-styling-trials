@@ -1,89 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>German flag</title>
+    <title>Grid of boxes</title>
     <style>
         body {
             margin: 0; /*Override default margin.*/
         }
-        .left-box {
+        
+        #upper-background-color { 
             background-color: blue;
-            width: 100px;
-            height: 100px;
-            margin-top: 50px;
-            margin-bottom: auto;
-            margin-left: auto; 
-            margin-right: auto;
         }
-        .right-box {
+
+        #lower-background-color {
             background-color: red;
+            
+        }
+
+        .background {
+            width: 350px;
+            height: 200px;
+        }
+
+        .box {
+            background-color: black;
             width: 100px;
             height: 100px;
             margin-top: 50px;
-            margin-bottom: auto;
-            margin-left: auto; 
-            margin-right: auto;
-        }
-
-        #upper-left-background {
-            background-color: gold;
-            width: 200px;
-            height: 200px;
-            margin: 0;
+            margin-left: 50px; 
             display: inline-block;
         }
-
-        #upper-right-background {
-            background-color: gold;
-            width: 200px;
-            height: 200px;
-            margin: 0;
-            display: inline-block;
-        }
-        #lower-left-background {
-            background-color: pink;
-            width: 200px;
-            height: 200px;
-            margin: 0;
-            
-            display: inline-block;
-        }
-
-        #lower-right-background {
-            background-color: pink;
-            width: 200px;
-            height: 200px;
-            margin: 0;
-            
-            display: inline-block;
-
+        
     </style>
   </head>
-  <body>
-    <div> <!--Upper background block-->
-        <div class="background" id="upper-left-background">   
-            <div class="left-box" id="upper-left">
-            </div>
-        </div>
 
-        <div class="background" id="upper-right-background">       
-            <div class="right-box" id="upper-right">
+  <body>
+    <div class="background" id="upper-background-color"> <!--Upper background block-->   
+            <div class="box">
             </div>
-        </div>
+            <div class="box">
+            </div>
     </div>
     
-    <div> <!--Lower background block-->
-        <div class="background" id="lower-left-background">
-            <div class="left-box" id="lower-left">
+    <div class="background" id="lower-background-color"> <!--Lower background block-->
+        
+            <div class="box">
             </div>
-        </div>
-
-        <div class="background" id="lower-right-background">
-            <div class="right-box" id="lower-right">
+            <div class="box">
             </div>
-        </div>
     </div>
-
   </body>
 </html>
 
