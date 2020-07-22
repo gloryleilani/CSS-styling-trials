@@ -1,40 +1,120 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <title>German flag</title>
-
     <style>
         body {
             margin: 0; /*Override default margin.*/
         }
+        .left-box {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            margin-top: 50px;
+            margin-bottom: auto;
+            margin-left: auto; 
+            margin-right: auto;
+        }
+        .right-box {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            margin-top: 50px;
+            margin-bottom: auto;
+            margin-left: auto; 
+            margin-right: auto;
+        }
 
-        #top {
+        #upper-left-background {
+            background-color: gold;
+            width: 200px;
+            height: 200px;
+            margin: 0;
+            display: inline-block;
+        }
+
+        #upper-right-background {
+            background-color: gold;
+            width: 200px;
+            height: 200px;
+            margin: 0;
+            display: inline-block;
+        }
+        #lower-left-background {
+            background-color: pink;
+            width: 200px;
+            height: 200px;
+            margin: 0;
             
+            display: inline-block;
+        }
+
+        #lower-right-background {
+            background-color: pink;
+            width: 200px;
+            height: 200px;
+            margin: 0;
+            
+            display: inline-block;
+
+    </style>
+  </head>
+  <body>
+    <div> <!--Upper background block-->
+        <div class="background" id="upper-left-background">   
+            <div class="left-box" id="upper-left">
+            </div>
+        </div>
+
+        <div class="background" id="upper-right-background">       
+            <div class="right-box" id="upper-right">
+            </div>
+        </div>
+    </div>
+    
+    <div> <!--Lower background block-->
+        <div class="background" id="lower-left-background">
+            <div class="left-box" id="lower-left">
+            </div>
+        </div>
+
+        <div class="background" id="lower-right-background">
+            <div class="right-box" id="lower-right">
+            </div>
+        </div>
+    </div>
+
+  </body>
+</html>
+
+
+
+<!--Trial 3: --> 
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>German flag</title>
+    <style>
+        body {
+            margin: 0; /*Override default margin.*/
+        }
+        #top {
             background-color: black;
             width: 500px;
             height: 100px;
-           
         }
-
         #middle {
-            
             background-color: red;
             width: 500px;
             height: 100px;
-            
         }
-
         #bottom {
-            
             background-color: #ffd700;
             width: 500px;
             height: 100px;
-            
         }
     </style>
   </head>
-
   <body>
     <div class="bar" id="top">
     </div>
@@ -42,14 +122,8 @@
     </div>
     <div class="bar" id="bottom">
     </div>
-
-
   </body>
-
-</html>
-
-
-
+</html> -->
 
 <!-- Trial 2: -->
 <!-- <!DOCTYPE html>
